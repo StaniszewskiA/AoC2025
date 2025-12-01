@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "input_helper.h"
+#include "helpers/input_helper.h"
 
 #define MOD 100
 
