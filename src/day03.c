@@ -10,7 +10,7 @@ static int get_joltage_digit_val(char digitChar) {
     return -1;
 }
 
-void solve_day01_a(char** instructions, int count) {
+void solve_day03_a(char** instructions, int count) {
     long long res = 0;
 
     for (int bank = 0; bank < count; ++bank) {
@@ -42,7 +42,7 @@ void solve_day01_a(char** instructions, int count) {
 
 #define JOLTAGE_LEN 12
 
-void solve_day01_b(char **instructions, int count) {
+void solve_day03_b(char** instructions, int count) {
     long long res = 0;
 
     for (int bank = 0; bank < count; ++bank) {
@@ -87,15 +87,15 @@ int main(int argc, char *argv[]) {
     if (argc >= 3) task = atoi(argv[2]);
 
     int count = 0;
-    char **instructions = read_input_file(argv[1], &count);
+    char** instructions = read_input_file(argv[1], &count);
     if (!instructions) return 1;
 
     switch (task) {
         case 1:
-            solve_day01_a(instructions, count);
+            solve_day03_a(instructions, count);
             break;
         case 2:
-            solve_day01_b(instructions, count);
+            solve_day03_b(instructions, count);
             break;
         default:
             fprintf(stderr, "Unknown TASK: %d\n", task);

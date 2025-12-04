@@ -9,7 +9,7 @@ static int get_new_pos(int currPos, int steps) {
     return (currPos + steps % MOD + MOD) % MOD;
 }
 
-void solve_day01_a(char **instructions, int count) {
+void solve_day01_a(char** instructions, int count) {
     int currIdx = 50;
     int res = 0;
 
@@ -28,7 +28,7 @@ void solve_day01_a(char **instructions, int count) {
     printf("res: %i\n", res);
 }
 
-void solve_day01_b(char **instructions, int count) {
+void solve_day01_b(char** instructions, int count) {
     int currIdx = 50;
     int res = 0;
 
@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
     if (argc >= 3) task = atoi(argv[2]);
 
     int count = 0;
-    char **instructions = read_input_file(argv[1], &count);
+    char** instructions = read_input_file(argv[1], &count);
     if (!instructions) return 1;
 
     switch (task) {
