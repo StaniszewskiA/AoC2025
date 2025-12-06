@@ -3,7 +3,7 @@
 #include <string.h>
 #include "helpers/input_helper.h"
 
-char **read_input_file(const char *filename, int *out_count) {
+char** read_input_file(const char *filename, int *out_count) {
     FILE *file = fopen(filename, "r");
     if (!file) {
         perror("Error opening input file");
