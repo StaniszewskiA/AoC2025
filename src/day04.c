@@ -29,7 +29,7 @@ static int forklift(char* gridPtr, const bool remove) {
 
             if (sum < BOXED + 1) {
                 ++res;
-                if (remove) GRID_ACCESS(gridPtr, i, j) = SPACE; // Task 2
+                if (remove) GRID_ACCESS(gridPtr, i, j) = SPACE;
             }
         }
     }

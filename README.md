@@ -1,0 +1,66 @@
+# Advent of Code 2025
+
+## Problems
+
+- Day 01 [`day01.c`](src/day01.c):
+    - Part 1: Simulate rotations on a circular dial based on a sequence of left/right instructions, counting how many times the dial points at 0 after each rotation.
+    - Part 2: Count how many times the dial points at 0 during any click of the dial, not just at the end of a rotation.
+- Day 02 [`day02.c`](src/day02.c):
+    - Part 1: Find all product IDs in given ranges that are made of a sequence of digits repeated exactly twice, and sum them.
+    - Part 2: Find all product IDs in given ranges that are made of a sequence of digits repeated at least twice, and sum them.
+- Day 03 [`day03.c`](src/day03.c):
+    - Part 1: For each bank of batteries, select two batteries to form the largest possible two-digit joltage, and sum these maximums across all banks.
+    - Part 2: For each bank, select twelve batteries to form the largest possible twelve-digit joltage, and sum these maximums across all banks.
+- Day 04 [`day04.c`](src/day04.c):
+    - Part 1: Count rolls of paper on a grid that can be accessed by a forklift (fewer than four adjacent rolls).
+    - Part 2: Iteratively remove accessible rolls, updating the grid, and count the total removed.
+- Day 05 [`day05.c`](src/day05.c):
+    - Part 1: Count how many available ingredient IDs are fresh by checking if they fall within any of the given fresh ID ranges.
+    - Part 2: Count the total number of unique ingredient IDs considered fresh by all the fresh ID ranges, regardless of availability.
+- Day 06 [`day06.c`](src/day06.c):
+    - Part 1: Solve math problems arranged in vertical columns, applying the specified operation to each group, and sum all results.
+    - Part 2: Read problems right-to-left by columns, reconstruct numbers, apply the operation, and sum all results.
+- Day 07 [`day07.c`](src/day07.c):
+    - Part 1: Simulate a downward-moving beam in a grid, splitting at each splitter, and count total splits.
+    - Part 2: Count all possible timelines by recursively following every left/right path at each splitter.
+- Day 08 [`day08.c`](src/day08.c):
+    - Part 1: Connect the closest pairs of junction boxes in 3D space, track circuit sizes, and multiply the sizes of the three largest circuits after a set number of connections.
+    - Part 2: Continue connecting closest pairs until all boxes are in one circuit, then multiply the X coordinates of the last connected pair.
+- Day 09 [`day09.c`](src/day09.c):
+    - Part 1: Find the largest rectangle in a grid using two red tiles as opposite corners.
+    - Part 2: Find the largest rectangle using only red and green tiles, with red tiles as opposite corners.
+- Day 10 [`day10.c`](src/day10.c)/[`day10.jl`](src/day10.jl):
+    - Part 1: Find the minimum button presses to match indicator light diagrams using button wiring schematics for each machine.
+    - Part 2: Find the minimum button presses to match joltage requirements using button wiring schematics for each machine.
+
+## Solution approaches
+- Day 01 [`day01.c`](src/day01.c):
+    - Part 1: (C) Modular arithmetic.
+    - Part 2: (C) Modular arithmetic.
+- Day 02: [`day02.c`](src/day02.c):
+    - Part 1: (C) Pattern matching.
+    - Part 2: (C) Pattern matching.
+- Day 03: [`day03.c`](src/day03.c):
+    - Part 1: (C) Greedy.
+    - Part 2: (C) Greedy.
+- Day 04: [`day04.c`](src/day04.c):
+    - Part 1: (C) Grid simulation.
+    - Part 2: (C) Grid simulation.
+- Day 05: [`day05.c`](src/day05.c):
+    - Part 1: (C) Checking intervals.
+    - Part 2: (C) Merging intervals.
+- Day 06: [`day06.c`](src/day06.c):
+    - Part 1: (C) Grid simulation.
+    - Part 2: (C) Matrix transpose.
+- Day 07: [`day07.c`](src/day07.c):
+    - Part 1: (C) Recursion.
+    - Part 2: (C) Recursion.
+- Day 08: [`day08.c`](src/day08.c):
+    - Part 1: (C) Union find.
+    - Part 2: (C) Union find.
+- Day 09: [`day09.c`](src/day09.c)
+    - Part 1: (C) Sorting, Matrix compression.
+    - Part 2: (C) Sorting, Matrix compression, Flood fill.
+- Day 10: [`day10.c`](src/day10.c)/[`day10.jl`](src/day10.jl):
+    - Part 1: (C) Bit mask, Linear algebra in GF(2).
+    - Part 2: (Julia) Linear programming. Gave up on trying to implement it in C.
