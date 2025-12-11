@@ -32,6 +32,9 @@
 - Day 10 [`day10.c`](src/day10.c)/[`day10.jl`](src/day10.jl):
     - Part 1: Find the minimum button presses to match indicator light diagrams using button wiring schematics for each machine.
     - Part 2: Find the minimum button presses to match joltage requirements using button wiring schematics for each machine.
+- Day 11 [`day11.c`](src/day11.c)
+    - Part 1: Find all paths between two nodes in a graph.
+    - Part 2: Find all paths between two nodes in a graph that go through two types of marked nodes.
 
 ## Solution approaches
 - Day 01 [`day01.c`](src/day01.c):
@@ -64,3 +67,6 @@
 - Day 10: [`day10.c`](src/day10.c)/[`day10.jl`](src/day10.jl):
     - Part 1: (C) Bit mask, Linear algebra in GF(2).
     - Part 2: (Julia) Linear programming. Gave up on trying to implement it in C.
+- Day 11 [`day11.c`](src/day11.c)
+    - Part 1: (C) Depth-First Search, Memoization/Dynamic programming
+    - Part 2: (C) Depth-First Search, Memoization/Dynamic programming, Bitmask
