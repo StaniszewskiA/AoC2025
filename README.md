@@ -35,6 +35,9 @@
 - Day 11 [`day11.c`](src/day11.c)
     - Part 1: Find all paths between two nodes in a graph.
     - Part 2: Find all paths between two nodes in a graph that go through two types of marked nodes.
+- Day 12 [`day12.c`](src/day12.c)
+    - Part 1: Tiling.
+    - Part 2: -
 
 ## Solution approaches
 - Day 01 [`day01.c`](src/day01.c):
@@ -70,3 +73,6 @@
 - Day 11 [`day11.c`](src/day11.c)
     - Part 1: (C) Depth-First Search, Memoization/Dynamic programming
     - Part 2: (C) Depth-First Search, Memoization/Dynamic programming, Bitmask
+- Day 12 [`day12.c`](src/day12.c)
+    - Part 1: (C) Heuristic
+    - Part 2: -
